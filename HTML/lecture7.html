@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+<!-- for making table we will eclose the content of table in table tag.  -->
+ <!-- if we use border-collapse property then there is no use of cellspacing property  -->
+<table border="1px" cellspacing="10px" cellpadding="10px" style="border-collapse: collapse;"> 
+
+    <caption>Mess fee</caption> 
+    <!-- table head  -->
+        <thead bgcolor="red"> 
+            <!-- table row  -->
+             <tr >
+                <!-- column heading  -->
+                 <th>Name</th>
+                 <th>Roll number</th>
+                 <th>college</th>
+             </tr>
+        </thead>
+        <!-- table body  -->
+         <tbody bgcolor="blue">
+            <tr>
+                <!-- table data  -->
+                 <td bgcolor="green">madhu sharma</td>
+                 <td>347</td>
+                 <td rowspan="3">TISMN</td>
+            </tr>
+            <tr>
+                <!-- table data  -->
+                 <td>Ram</td>
+                 <td>346</td>
+                 <!-- <td>TISMN</td> -->
+            </tr>
+            <tr>
+                <!-- table data  -->
+                 <td>laxman</td>
+                 <td>345</td>
+                 <!-- <td>TISMN</td> -->
+            </tr>
+            <tr>
+                <th bgcolor="red">fee status</th>
+                <td colspan="2">Paid</td>
+            </tr>
+         </tbody>
+    </table>
+
+    <br>
+    <br><br>
+    
+    <!-- example  -->
+     <table border="3px" style="border-collapse: collapse;" cellpadding="10px">
+        <tr>
+            <td colspan="2">A</td>
+            <td rowspan="3">B</td>
+        </tr>
+        <tr>
+            <td rowspan="2">C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>E</td>
+        </tr>
+     </table>
+</body>
+</html>
